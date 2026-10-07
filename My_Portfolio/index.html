@@ -12,23 +12,23 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo">
+                <a href="#header" class="logo" aria-label="Shubham Rothe home"><span class="logo-bracket">&lt;</span>SR<span class="logo-bracket">/&gt;</span></a>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                    <!-- <i class="fa-sharp fa-solid fa-square-xmark"></i> -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                     <i class="fas fa-times"></i>
                 </ul>
-                <!-- <i class="fa-sharp fa-solid fa-bars"></i> -->
                 <i class="fas fa-bars"></i>
             </nav>
             <div class="header-text">
-                <p>Full Stack Developer</p>
+                <p>Java Full Stack Developer</p>
                 <h1>Hi, I am Shubham Rothe</h1>
-        
+                <p class="location-line">Mumbai, Maharashtra, India</p>
+                <p class="intro-line">Building scalable backend systems, secure REST APIs, and responsive enterprise applications.</p>
             </div>
         </div>
     </div>
@@ -41,35 +41,72 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hi! I am Shubham Rothe, I am from a small town called 'Telhara' people also called as 'White Gold City'. I am graduated from Govt. College of Engg.,Jalgaon(MS) and recently  complted my PGD from CDAC Mumbai.</p>
+                    <p>Java Full Stack Developer with 2+ years of experience in designing, developing, and maintaining enterprise-grade applications in the Banking and Financial Services domain. I specialize in Java, Spring Boot, REST APIs, JSP, Hibernate, JPA, PostgreSQL, and MS-SQL, with hands-on experience in secure authentication, microservices, and production support.</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
                     </div>
-                    <!-- for skills -->
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                        <li><span>Programming Languages</span><br>C, C++, Java, C#</li>
-                        <li><span>Web Devalopement</span><br>HTML5, CSS, JavaScript, React.js, Node.js</li>
-                        <li><span>Data Analysis</span><br>SQL,Excel</li>
-                        <li><span>Database Management</span><br>MySQL, MongoDB</li>
-                        <li><span>Software Development</span><br>Git,Docker</li>
+                            <li><span>Languages</span><br>Java, SQL, HTML, CSS, JavaScript, React</li>
+                            <li><span>Frameworks</span><br>Spring Boot, Spring MVC, Spring Data JPA, Hibernate, JSP, Apache Tomcat</li>
+                            <li><span>Security</span><br>JWT Authentication, Keycloak</li>
+                            <li><span>Core Skills</span><br>Object-Oriented Programming, Data Structures and Algorithms, REST API Design, Microservices, Database Management</li>
+                            <li><span>Databases</span><br>MySQL, PostgreSQL, MS-SQL</li>
+                            <li><span>Tools and IDEs</span><br>Git, GitHub, Maven, Jenkins, Docker, Jira, SonarQube, Postman, Swagger, Eclipse, STS, IntelliJ IDEA, Claude</li>
                         </ul>
                     </div>
-                        <!-- for Education -->
                     <div class="tab-contents" id="education">
                         <ul>
-                        <li><span>2023-2023</span><br>PGD from Center for Developement in Advanced Computing, Mumbai</li>
-                        <li><span>2015-2019</span><br>B.Tech from Govt. College of Engg., Jalgaon(MS)</li>
-                        <li><span>2014-2015</span><br>HSC from S.B.Highschool, Telhara </li>
-                        <li><span>2012-2013</span><br>SSC from S.B.Highschool, Telhara</li>
+                            <li><span>2023-2023</span><br>Post Graduate Diploma in Advanced Computing (PG-DAC) from CDAC Mumbai</li>
+                            <li><span>2015-2019</span><br>B.Tech from Government College of Engineering, Jalgaon</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <section id="experience">
+        <div class="container">
+            <h1 class="sub-title">Experience</h1>
+            <div class="experience-list">
+                <article class="experience-item">
+                    <div class="experience-heading">
+                        <div>
+                            <h2>Java Developer</h2>
+                            <p>Hitachi Payments Services · Mumbai, Maharashtra</p>
+                        </div>
+                        <span>April 2026 – Present</span>
+                    </div>
+                    <p>Worked on the Merchant Acquisition and Registration System (MARS), building merchant onboarding, profile management, document verification, and approval workflows. Designed REST APIs and JSP interfaces, and developed the Recon module for transaction validation, settlement processing, exception handling, and reporting.</p>
+                    <p class="experience-tech">Java · Spring Boot · REST APIs · JSP · MS-SQL</p>
+                </article>
+                <article class="experience-item">
+                    <div class="experience-heading">
+                        <div>
+                            <h2>Jr. Java Developer</h2>
+                            <p>SATMAT Technologies Pvt. Ltd. · Client: Hitachi Payments Services · Pune, Maharashtra</p>
+                        </div>
+                        <span>February 2025 – March 2026</span>
+                    </div>
+                    <p>Developed Java and Spring Boot microservices for the Dynamic Currency Conversion (DCC) merchant portal, integrated Keycloak authentication and role-based access control, and improved website performance and speed by 55% through optimization.</p>
+                    <p class="experience-tech">Java · Spring Boot · REST APIs · Microservices · PostgreSQL</p>
+                </article>
+                <article class="experience-item">
+                    <div class="experience-heading">
+                        <div>
+                            <h2>Software Engineer</h2>
+                            <p>Infopeer Software Solutions Pvt. Ltd. · Pune, Maharashtra</p>
+                        </div>
+                        <span>February 2024 – February 2025</span>
+                    </div>
+                    <p>Built backend APIs for the Integrated Eligibility System (IES), helping reduce manual effort for DHS daily tasks. Wrote REST API unit tests achieving approximately 80% test coverage.</p>
+                    <p class="experience-tech">Java · Spring Boot · REST APIs · Microservices · MySQL</p>
+                </article>
+            </div>
+        </div>
+    </section>
     <!-- services -->
     <div id="services">
         <div class="container">
@@ -77,22 +114,22 @@
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2> Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fuga facere aperiam dolorem voluptas natus doloribus maiores distinctio itaque vitae similique numquam perspiciatis cum, necessitatibus odit mollitia nemo rerum illo.</p>
+                    <h2> Java Backend Development</h2>
+                    <p>Designing and developing enterprise-grade backend solutions using Java, Spring Boot, and RESTful APIs for scalable business systems.</p>
                     <a href="#">Learn more</a>
                 </div>
 
                 <div>
                     <i class="fa-sharp fa-solid fa-crop"></i>
-                    <h2> UI Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fuga facere aperiam dolorem voluptas natus doloribus maiores distinctio itaque vitae similique numquam perspiciatis cum, necessitatibus odit mollitia nemo rerum illo.</p>
+                    <h2> API & Microservices</h2>
+                    <p>Building secure, maintainable microservices and APIs with authentication, data validation, and efficient integration with databases and external systems.</p>
                     <a href="#">Learn more</a>
                 </div>
 
                 <div>
                     <i class="fa-brands fa-app-store"></i>
-                    <h2> App Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fuga facere aperiam dolorem voluptas natus doloribus maiores distinctio itaque vitae similique numquam perspiciatis cum, necessitatibus odit mollitia nemo rerum illo.</p>
+                    <h2> Database & Reporting</h2>
+                    <p>Writing optimized SQL queries, stored procedures, and reports to drive reconciliation, settlement processing, and business reporting.</p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
@@ -101,81 +138,82 @@
     </div>
 
     <!-- ---------------portfolio--------- -->
-    <div class="portfolio">
+    <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png">
+                    <img src="images/merchant-payments.jpg" alt="Customer making a card payment at a point-of-sale terminal" loading="lazy" decoding="async">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The app connects you to the talented people around the world. </p>
+                        <h3>Merchant Acquisition & Registration System</h3>
+                        <p>Built modules for merchant onboarding, document verification, approval workflows, and profile management in the banking domain.</p>
                         <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.png">
+                    <img src="images/reconciliation.jpg" alt="Analytics dashboard displayed on a laptop" loading="lazy" decoding="async">
                     <div class="layer">
-                        <h3>Music App</h3>
-                        <p>The app connects you to the talented people around the world. </p>
+                        <h3>Recon (Reconciliation) Module</h3>
+                        <p>Developed transaction validation, settlement processing, exception handling, and reporting workflows for financial operations.</p>
                         <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-3.png">
+                    <img src="images/currency-conversion.jpg" alt="Customer entering card details for an online payment" loading="lazy" decoding="async">
                     <div class="layer">
-                        <h3>Online Sopping App</h3>
-                        <p>The app connects you to the talented people around the world. </p>
+                        <h3>Dynamic Currency Conversion Portal</h3>
+                        <p>Designed and implemented a microservices-based portal with Keycloak-based authentication and performance optimization techniques.</p>
                         <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
+            <a href="#contact" class="btn">Contact Me</a>
         </div>
     </div>
     <!-- -------------contact----- -->
-    <div class="contact">
+    <div id="contact" class="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope-circle-check"></i>shubhamrothe01@gmail.com</p>
-                    <p> <i class="fa-brands fa-whatsapp"></i>7066110527</p>
+                    <p><i class="fa-solid fa-envelope-circle-check"></i>rothe.shubham0607@gmail.com</p>
+                    <p> <i class="fa-brands fa-whatsapp"></i>9158914845</p>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/shubham-rothe-88727a142/"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/shubhamrothe?tab=repositories"><i class="fa-brands fa-square-github"></i></a>
                     </div>
-                    <a href="images/My_Resume.pdf" download class="btn btn2">Download Resume</a>
+                    <a href="images/Shubham_Rothe_cv.pdf" download class="btn btn2">Download Resume</a>
                 </div>
                 <div class="contact-right">
-                     <form>
+                     <form action="https://formspree.io/f/xvkzkawv" method="POST">
                         <input type="text" name="Name" placeholder="Your Name" required>
                        <input type="email" name="email" placeholder="Your Email" required>
-                       <textarea name="Message" rows="6" placeholder="Your message"></textarea> 
+                       <textarea name="Message" rows="6" placeholder="Your message" required></textarea>
                        <button type="submit" class="btn btn2">Submit</button>
                      </form>
                 </div>
             </div>
         </div>
-        <!-- copyright -->
         <div class="copyright">
-            <p>Copyright <i class="fa-regular fa-copyright"></i> Rothe.Made with <i class="fa-solid fa-heart"></i> by Shubham Rothe  </p>
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Rothe. Made with <i class="fa-solid fa-heart"></i> by Shubham Rothe</p>
         </div>
     </div>
     <!-- JavaScript code -->
     <script>
-        var tablinks = document.getElementByClassName("tab-links");
-        var tabcontents = document.getElementByClassName("tab-contents");
- // check it, it will working properly
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname, evt) {
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
             }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
+            for (var i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].classList.remove("active-tab");
             }
-            event.currentTarget.classList. add("active-link");//
-            document.getElementById(tabname).classList.add("active-tab");//
+            if (evt && evt.currentTarget) {
+                evt.currentTarget.classList.add("active-link");
+            }
+            document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
 </body>
